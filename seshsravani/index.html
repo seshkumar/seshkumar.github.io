@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en">
+    <head>
+                <meta charset="UTF-8">
+                <meta name="theme-color" content="#663300">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sravani &amp; Sesh</title>
+        <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon-180x180.png">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css">
+                <link rel="stylesheet" type="text/css" href="20041501/css/usercom.css">
+        <style id="dynamicStyles">
+    a, a:visited, a:hover, a:active {
+        color: #663300;
+    }
+    
+    .background {
+        background-image: url("assets/images/backgrounds/0060.jpg");
+    }
+    
+    .bookCover {
+        background-image: url("uploads/231156/cover.jpg?1616249319");
+    }
+    
+    .bookCoverSample {
+        background-image: url("");
+    }
+    
+    button {
+        background: rgba(102,51,0,0.8);
+        background: linear-gradient(170deg, rgba(102,51,0,0.5), rgba(102,51,0,1));
+        border: 1px outset #663300;
+    }
+    
+    button:hover {
+        background: rgba(102,51,0,0.5);
+        background: linear-gradient(170deg, rgba(102,51,0,0.3), rgba(102,51,0,0.8));
+    }
+    
+    .closeWindowIcon:hover {
+        color: #663300;
+    }
+    
+    #correspondenceBorder {
+        border-color: #663300;
+    }
+    
+    #correspondenceCard {
+        background-image: url("assets/images/designs/blankpage/013D.png");
+    }
+    
+    .iconButton:hover {
+        color: #663300;
+    }
+    
+    input {
+        border: 1px solid #663300;
+    }
+    
+    input:focus {
+        outline-color: #663300;
+    }
+
+    .insideCover {
+        background-image: url("assets/images/designs/insidecover/013D.jpg");
+    }
+    
+    .leftPage {
+        background-image: url("assets/images/designs/leftpage/013D.png");
+    }
+    
+    .pageSection:not(:last-child) {
+        border-bottom: 1px solid #663300;
+    }
+    
+    .rightPageNoTitle {
+        background-image: url("assets/images/designs/rightpage/013D.png");
+    }
+    
+    .rightPageWithTitle {
+        background-image: url("assets/images/designs/rightpagewithtitle/013D.png");
+    }
+    
+    select {
+        border: 1px solid #663300;
+    }
+    
+    select:focus {
+        outline-color: #663300;
+    }
+    
+    textarea {
+        border: 1px solid #663300;
+    }
+    
+    textarea:focus {
+        outline-color: #663300;
+    }
+    
+    .ui-datepicker th {
+        color: #663300;
+    }
+    
+    .ui-tooltip {
+        background-color: #663300;
+    }
+    
+    .weddingColorBackground {
+        background-color: #663300 !important;
+    }
+    
+    .weddingColorBackgroundFaded {
+        background-color: rgba(102,51,0,0.7) !important;
+    }
+    
+    .weddingColorBackgroundHover:hover {
+        background-color: #663300 !important;
+    }
+    
+    .weddingColorBorder {
+        border-style: solid !important;
+        border-color: #663300 !important;
+    }
+    
+    .weddingColorBorderHover:hover {
+        border-style: solid !important;
+        border-width: thin !important;
+        border-color: #663300 !important;
+    }
+    
+    .weddingColorContent {
+        color: #663300 !important;
+    }
+    
+    .weddingColorContentHover:hover {
+        color: #663300 !important;
+    }
+    
+    @media (orientation: portrait) {
+        .leftPage {
+            background-image: url("assets/images/designs/toppage/013D.png");
+        }
+        
+        .rightPageNoTitle {
+            background-image: url("assets/images/designs/bottompage/013D.png");
+        }
+
+        .rightPageWithTitle {
+            background-image: url("assets/images/designs/bottompagewithtitle/013D.png");
+        }   
+    }
+</style>     </head>
+    <body data-wedding="231156">
+                <div class="loader">
+    <img id="loaderFlower" src="assets/images/WedsiteFlower.png"/>
+</div>
+<div class="loaderBlock">
+    <img id="loaderFlower" src="assets/images/WedsiteFlower.png"/>
+</div><div class="background">
+    <div id="backgroundPhotos" data-photoalbum="0" data-photocount="6" data-actualphotocount="6" data-xya="286,77,0/79,319,16/67,6,17/407,-108,12/362,429,-9/781,355,25/777,23,23/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0/10,10,0" data-fixedlayout="1"></div>    <div id="book">
+        <div id="rightPageBack" class="insideCover"></div>
+        
+<section data-pagenumber="6" class="page pageTypeGuestBook rightPageBase">
+    <div class="rightPage rightPageNoTitle">
+                <h2 class="pageHeading topHeading">Guest Book</h2>
+        <div class="pageContent">
+            <section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Raj Majumdar</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 17, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations. Wish you a very happy married life.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">yasmeen</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 17, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML"></p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Shilpi and Sriram</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 15, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">We wish you both a wonderful married life.. Hope your coffee blend will always be  "&#xE9;clatant aux ar&#xF4;mes".</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Lavanya </h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 15, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Hi Dear,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">We wish you a very happy married life...enjoy the new life</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Narsingh</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Saturday, June 14, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">We wish all the best both of you &amp; wish you very happy married life.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Chytanya</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Saturday, June 14, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">All the best Satya and Sesh. Have a great life together.. All your wishes come true and  Wish you very happy married life.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Rajsekhar G</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, June 13, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats Satya &amp; Sesh ..</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you and your significant other the best of wishes. . You  both &#x2019;ll have a blessed life ahead.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">All the best as you embark on this journey.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Sulakshana</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, June 13, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Lovely dear... Congrats to both of u.. </span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Afzal</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, June 13, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats Satya.....!!!!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you a very Happy married life. May all your dreams come true and god bless you.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Velan</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, June 13, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Satya and Sesh..</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you a happy married life.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Amolt</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, June 13, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations Sesh and Satya..</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you both a great life ahead! </span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Girish</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, June 12, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats!!!!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you a very happy married life</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Hari</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, June 12, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you a very happy married life</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Shiva kumar.pragada</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 9, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations &amp; All the best Satya and Sesh. Have a great life together.. All your wishes come true and  Wish you very happy married life.A new life is waiting for u both ....</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Rishav Suchanti</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 9, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">All the best Satya and Sesh. Have a great life together.. All your wishes come true and  Wish you very happy married life.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Prakash.K</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 9, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish You a Happy Married Life</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Yasmeen Khan</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, June 6, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations Sesh, wish you a very very happy married life.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Anish</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 3, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">Hello Satya,
+
+All the very best and wishing you in advance happy married life...
+
+Cheers to both of you...
+
+Regard,
+Anish</p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">rama</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 3, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations from rama and Swathi </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you a very happy married life ...</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Pradeep George Jacob</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 3, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Bro...Finally....Have a wonderful life around.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Vijay Goswami</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 3, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">All the best Satya and Sesh. Have a great life together.. !! :):)</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Anish</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 3, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">All the very best Satya...
+
+Cheers</p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Anish</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 3, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">All the very best Satya and Sesh...
+
+Cheers,
+Anish</p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Radhika</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 3, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">Congratulations Sravani!
+Wish you both a wonderful happy married life!!!</p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Radhika</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Tuesday, June 3, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">Congratulations Sravani!!
+Wish you both a wonderful happy married life!!</p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Hiral Singh</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Dear Sravani and Sesh,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations on your Big day! </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">A small poem in the honour of your love and happy union.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">"I&#x2019;m wishing you a day of glory</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Opening with firework for the ceremony,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">With best friends and all quests around</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">And the sun in the sky as the crown,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">With soft wind of sweet music in the air,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Clouds resembling the words "Congrats, my dear",</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">And with the tiny brightening stars,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Twinkling to bring a smile in your hearts".</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wishing you a life full of love, laughter, blessings and lots and loads of happiness. God Bless you both!! </span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Sravanthi &amp; Sukumar</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations Satya &amp; Sesh !!!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you both many wonderful years ahead.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Sreelu</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">manchi coffee lanti life ni wish chesthoo..</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Prasad &amp; Sreelu</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Priyanka</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Hey Sravani hearty congratulations to both of u !! Hope this blend will always stay warm and classic forever !!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Priyanka &amp; Sudhanshu</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Aditya Boppana</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations Sravani &amp; Sesh,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wishing you a wonderful married life..</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Swetha &amp; Manjunath</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations to both of you and a very happy wedding..:)</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you both a wonderful life ahead..:)</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">RAVITEJA</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats to Sravani &amp; Sesh,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wishing you both a great future and wonderful journey.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Regards</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Ravi Teja</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">DC</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you both very happy life ahead... Thanks for inviting but i wont be able to make it due to little ill health... :(</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">But my blessings are there.. all d best :)</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Priyadarshini Rajendran</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Hey Sravani,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">congrats, happy married life :)</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">u look grt together...</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">and this coffee invite is superb :)</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">all the best dear!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Bes wishes,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Priya</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Pradeep Reddy Kancharla</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Monday, June 2, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats Satya &amp; Sesh on your wedding!!! Wish you loads of happiness and fun...Enjoy this precious time!!</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">RAGHAVA</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">Congrats Satya and Sesh !!</p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Mayank &amp; Babita</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations Satya n Sesh!!!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Enjoy the rituals and life together. All the best.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Rajnikanth Gadapa</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats Satya!! I wish you all the very best.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Jithen</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">Congratulations Sravani and Sesh!!!
+Have a blast!</p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Balu &amp; Akki</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats Sravani, you guys are made for each other and perfectly blend like a good coffee indeed, I and Akki want to wish you both a Happy Married life!!</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Bagya</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations Satya.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Nice web site. Being a coffee lover myself, i am sure, this blend is going to bring a wonderful flavor. We wish you both a Very Happy and Flavourful Married Life.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">- Bagya and Prakasam</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Chandu</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations Sravani.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you both a Very Happy Married Life :)</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">shilpa namireddy</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations Sravani, Wish you a very happy married life!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">- Shilpa</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Jahnavi</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 1, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you both a wonderful life together.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Naganand</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Saturday, May 31, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Sravani</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you and Sesh all the best.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Mee coffee chaala bagundi</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">All the best!!!</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">shweta</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, May 30, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">What an Idea Sirji!!! nittygriity website:)</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">One can clearly see your love and compasion for eachother as well as for food :P </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">God bless you :)</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Chotte chotte bachh is super duper happy for you. </span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Prithvi</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, May 30, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Dear Seah and Sravani,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">I wish you both a very happy married life. God bless you both :).</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Regards</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Prithvi</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Yaswanth</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, May 30, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations due.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you and Sravani all the very best.</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Unfortunately, I would be missing the wedding dude.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Geetha</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, May 30, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">Congrats Sravs and Sesh gaaru.  Wish you a Happy married life. </p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Swetha Kannekanti</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, May 30, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Oh oh,IWe are gonna miss this coffeee!!!Sure ,you both will make a wonderful blend:)</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Our best wishes are with you both. </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Tons  of love and wishes,</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Bhavik, Swetha &amp; Manju</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Preethi Ghanathay</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Friday, May 30, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">May your love bloom brighter and your companionship grow sweeter with each passing year. Congratulations on your wedding.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Deepti</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations :)</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">So happy to see this invite... Big hug to both. All my best best wishes with you as you take this important step in your lives. Look forward to meeting you Sravani and hoping to get to know you better. </span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Sankalpa</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you both a wonderful life together. Innovative invitation...I feel life drinking coffee now!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">God Bless!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Sankalpa :)</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Kalyan</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">Congratulations Sesh and Shrawani.
+Wish you both a great life ahead! </p>    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Mahesh</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats Sesh and Sravani!! Wish you both a v happy married life!</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Pavan &amp; Swathi</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Dearest Sesham and Sravani:</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations and best of luck for your future!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Pavan &amp; Swathi</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Venu &amp; Chaitanya</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations! You are biting a 'sweet bullet'. Wish you guys a happy and exciting life together.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Pbg</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats Sesh and Sravani !! Enjoy the wedding and have a blast. </span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">pradeep</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Wish you both a happy married life! </span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Vinod _J</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congratulations sesh. Wishing you in advance a happy married life and loads of Coffeeeeeee</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">CSK</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Super Congrats Sesh and Sravani. Good to see you both together. You make a very nice couple! All the best for the D-day and for all the coffees ahead. </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Cheers - CSK</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">kalyan</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats SESH!!!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Bingo!!! </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Best Wishes &amp; GOD bless!!</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">See U Soon.</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Manoj kumar </h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Thursday, May 29, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Congrats sesh !!!  Nice to hear that you are getting married... I wish you and your fiancee the hapiness in the new beginning..</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">Susmita Dalvi</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Wednesday, May 28, 2014</h4>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Dear Sesh and Sravani</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">It gives me immense pleasure to wish the both of a very happy married life.  Hope your blend makes the bitter sweet moments of your life together the best memories.  May each day bring you joy and togetherness.  All the best to my best bud and the best girl in his life. </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Loads of love</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Sush</span></p>
+    </div>
+</section><section class="pageSection guestBookSection">
+        <h4 class="pageSectionTitle">wedsite.com</h4>
+        <h4 class="pageSectionSubTitle weddingColorContent">Saturday, May 17, 2014</h4>
+    <div class="pageSectionText">
+        <p class="pageContentParagraphNoHTML">Congratulations on your wedsite! We are honored to be a part of your special day. Thank you for choosing wedsite.com to share your wedding plans and experiences with your friends and family.</p>    </div>
+</section>        </div>
+    </div>
+    <button class="roundButton previousPageButton"><i class="icon fa fa-arrow-left" title="previous page"></i></button>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <button class="roundButton indexPageButton"><i class="icon fa fa-navicon" title="index page"></i></button>
+    <div id="ringsRight6" class="ringsRight"></div>
+</section>
+<section data-pagenumber="5" class="page pageTypeGallery rightPageBase">
+    <div class="rightPage rightPageWithTitle">
+                <h2 class="pageHeading topHeading">Gallery</h2>
+        <select id="galleryDropdown" title="select photo album">
+                            <option value="537378">Gallery</option>
+                    </select>
+        <div id="galleryContent" class="pageContent"></div>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <button class="roundButton indexPageButton"><i class="icon fa fa-navicon" title="index page"></i></button>
+            <div class="pageFlipButtonGhost nextPageButtonGhost">
+            <button class="pageFlipButton nextPageButton"><i class="icon fa fa-arrow-right" title="next page"></i></button>
+        </div>
+        <div class="pageFlipButtonGhost nextPageButtonGhostPortrait">
+            <button class="pageFlipButton nextPageButtonPortrait"><i class="icon fa fa-arrow-down" title="next page"></i></button>
+        </div>
+        <div id="ringsRight5" class="ringsRight"></div>
+</section><section data-pagenumber="4" class="page pageTypeBasic rightPageBase">
+    <div class="rightPage rightPageWithTitle">
+                <h2 class="pageHeading topHeading">The Blend</h2>
+        <div class="pageTitle"><span>Time and Venue</span></div>
+        <div class="pageContent">
+            <section class="pageSection" data-photoalbum="535693" >
+        <h4 class="pageSectionTitle">Big Day</h4>
+    <div class="pageSectionButtons">
+                            <button class="sectionButtonSmall mapButton"><i class="icon fa fa-map-o"></i> map</button>
+            </div>
+            <h4 class="pageSectionSubTitle weddingColorContent">Sunday, June 15, 2014 - 9:29 pm</h4>
+        <h5 class="pageSectionSubSubTitle location">TTD Kalyana Mandapam</h5>
+    <h5 class="pageSectionSubSubTitle mapAddress">Himayatnagar (Opposite Stanza Showroom)</h5>
+    <h5 class="pageSectionSubSubTitle mapCity">Hyderabad, Andhra Pradesh</h5>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"><strong><U>Includes all-you-can-eat dinner from 7 PM onwards ;-)</U></strong></span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">For more details contact: </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">+91 8297090099 (Venu) </span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">+91 9849284582 (Venkat)</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"><A HREF="http://hdliveevents.com/sravaniwedssesh" TARGET="_blank"><strong><U>Click here to watch live streaming</U></strong></A></span></p>
+    </div>
+</section>                    </div>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <button class="roundButton indexPageButton"><i class="icon fa fa-navicon" title="index page"></i></button>
+            <div class="pageFlipButtonGhost nextPageButtonGhost">
+            <button class="pageFlipButton nextPageButton"><i class="icon fa fa-arrow-right" title="next page"></i></button>
+        </div>
+        <div class="pageFlipButtonGhost nextPageButtonGhostPortrait">
+            <button class="pageFlipButton nextPageButtonPortrait"><i class="icon fa fa-arrow-down" title="next page"></i></button>
+        </div>
+        <div id="ringsRight4" class="ringsRight"></div>
+</section><section data-pagenumber="3" class="page pageTypeBasic rightPageBase">
+    <div class="rightPage rightPageWithTitle">
+                <h2 class="pageHeading topHeading">The Blend</h2>
+        <div class="pageTitle"><span>Sravani and Sesh</span></div>
+        <div class="pageContent">
+            <div class="pageSection" data-photoalbum="535692">
+        <div class="pageSectionButtons"></div>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">On suggestion of several coffee experts, few months ago, we began our experiments with the flavors</span></p><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;"/></LI><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;">Sravani</span></LI><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;">Sesh</span></LI><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">They had an interesting connection towards perfect blend as they complement and complete each other. Experts decided on a &#xA8;big day&#xA8; to declare the blend official through a series of rituals, which are considered auspicious- Kanyadanam (the giving away of daughter by the father), Panigrahana (the groom takes the bride's hand as a sign of their union) and Saptapadi(seven vows).</span></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;"/></p><p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">Your company would give us immense pleasure on this auspicious occassion.</span></p>
+    </div>
+</div>                    </div>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <button class="roundButton indexPageButton"><i class="icon fa fa-navicon" title="index page"></i></button>
+            <div class="pageFlipButtonGhost nextPageButtonGhost">
+            <button class="pageFlipButton nextPageButton"><i class="icon fa fa-arrow-right" title="next page"></i></button>
+        </div>
+        <div class="pageFlipButtonGhost nextPageButtonGhostPortrait">
+            <button class="pageFlipButton nextPageButtonPortrait"><i class="icon fa fa-arrow-down" title="next page"></i></button>
+        </div>
+        <div id="ringsRight3" class="ringsRight"></div>
+</section><section data-pagenumber="2" class="page pageTypeBasic rightPageBase">
+    <div class="rightPage rightPageWithTitle">
+                <h2 class="pageHeading topHeading">Refined Flavor</h2>
+        <div class="pageTitle"><span>Sesh</span></div>
+        <div class="pageContent">
+            <div class="pageSection" data-photoalbum="535691">
+        <div class="pageSectionButtons"></div>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">A refined flavor with all the characteristics that can get transformed into a &#xA8;Strong Expresso&#xA8;. The main characteristics are</span></p><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;"/></LI><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;">Big</span></LI><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;">Bald</span></LI><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;">Bold</span></LI>
+    </div>
+</div>                    </div>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <button class="roundButton indexPageButton"><i class="icon fa fa-navicon" title="index page"></i></button>
+            <div class="pageFlipButtonGhost nextPageButtonGhost">
+            <button class="pageFlipButton nextPageButton"><i class="icon fa fa-arrow-right" title="next page"></i></button>
+        </div>
+        <div class="pageFlipButtonGhost nextPageButtonGhostPortrait">
+            <button class="pageFlipButton nextPageButtonPortrait"><i class="icon fa fa-arrow-down" title="next page"></i></button>
+        </div>
+        <div id="ringsRight2" class="ringsRight"></div>
+</section><section data-pagenumber="1" class="page pageTypeBasic rightPageBase">
+    <div class="rightPage rightPageWithTitle">
+                <h2 class="pageHeading topHeading">Classic Flavor</h2>
+        <div class="pageTitle"><span>Sravani</span></div>
+        <div class="pageContent">
+            <div class="pageSection" data-photoalbum="535690">
+        <div class="pageSectionButtons"></div>
+    <div class="pageSectionText">
+        
+<p style="text-align:left"><span style="font-size:1.146rem; color:#000000;">A classic flavor with all the characterisitcs required to prepare the delicious "Traditional Indian Coffee". The main characteristics are</span></p><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;"/></LI><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;">Small</span></LI><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;">Simple</span></LI><LI style="text-align:"><span style="font-size:1.146rem; color:#000000;">Smiling</span></LI>
+    </div>
+</div>                    </div>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <button class="roundButton indexPageButton"><i class="icon fa fa-navicon" title="index page"></i></button>
+            <div class="pageFlipButtonGhost nextPageButtonGhost">
+            <button class="pageFlipButton nextPageButton"><i class="icon fa fa-arrow-right" title="next page"></i></button>
+        </div>
+        <div class="pageFlipButtonGhost nextPageButtonGhostPortrait">
+            <button class="pageFlipButton nextPageButtonPortrait"><i class="icon fa fa-arrow-down" title="next page"></i></button>
+        </div>
+        <div id="ringsRight1" class="ringsRight"></div>
+</section><section data-pagenumber="0" class="page pageTypeIndex rightPageBase">
+    <div class="rightPage rightPageNoTitle">
+        <div class="pageContent">
+            <div class="indexContent">
+                <h2 class="indexChapter weddingColorContentHover" data-chapter="1">Classic Flavor</h2><div class="indexPageTitleDiv"><span class="indexPageTitle weddingColorContentHover" data-pageid="1371897">Sravani</span></div><h2 class="indexChapter weddingColorContentHover" data-chapter="2">Refined Flavor</h2><div class="indexPageTitleDiv"><span class="indexPageTitle weddingColorContentHover" data-pageid="1371898">Sesh</span></div><h2 class="indexChapter weddingColorContentHover" data-chapter="3">The Blend</h2><div class="indexPageTitleDiv"><span class="indexPageTitle weddingColorContentHover" data-pageid="1371899">Sravani and Sesh</span></div><div class="indexPageTitleDiv"><span class="indexPageTitle weddingColorContentHover" data-pageid="1371901">Time and Venue</span></div>                                    <h2 class="indexChapter weddingColorContentHover" data-chapter="4">Gallery</h2>
+                                                    <h2 class="indexChapter weddingColorContentHover" data-chapter="5">Guest Book</h2>
+                            </div>
+        </div>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+                <div class="pageFlipButtonGhost nextPageButtonGhost">
+            <button class="pageFlipButton nextPageButton"><i class="icon fa fa-arrow-right" title="next page"></i></button>
+        </div>
+        <div class="pageFlipButtonGhost nextPageButtonGhostPortrait">
+            <button class="pageFlipButton nextPageButtonPortrait"><i class="icon fa fa-arrow-down" title="next page"></i></button>
+        </div>
+        <div id="ringsRight0" class="ringsRight"></div>
+</section><section data-pagenumber="0" class="page pageTypeIndex leftPageBase">
+    <div id="leftPageBack" class="insideCover">
+        <div class="leftPage">
+            <h2 class="pageHeading topHeading">Sravani &amp; Sesh</h2>
+            <div class="photoFrame">
+                <div class="photo" data-currentphoto="0" data-photoalbum="535689"></div>
+                <button class="roundButton previousPhotoButton"><i class="icon fa fa-arrow-left" title="previous image"></i></button>
+                <button class="roundButton nextPhotoButton"><i class="icon fa fa-arrow-right" title="next image"></i></button>
+            </div>
+            <h2 class="pageHeading bottomHeading">June 15, 2014</h2>
+        </div>
+        <div class="pageFlipButtonGhost previousPageButtonGhost">
+            <button class="pageFlipButton previousPageButton"><i class="icon fa fa-arrow-left" title="previous page"></i></button>
+        </div>
+        <div class="pageFlipButtonGhost previousPageButtonGhostPortrait">
+            <button class="pageFlipButton previousPageButtonPortrait"><i class="icon fa fa-arrow-up" title="previous page"></i></button>
+        </div>
+        <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+            </div>
+    <div id="ringsLeft0" class="ringsLeft"></div>
+</section><section data-pagenumber="1" class="page pageTypeBasic leftPageBase" >
+    <div class="leftPage">
+        <h2 class="pageHeading topHeading">Sravani &amp; Sesh</h2>
+        <div class="photoFrame">
+            <div class="photo" data-currentphoto="0" data-photoalbum="0" data-sectiontitle=""></div>
+            <div class="map"></div>
+            <button class="roundButton previousPhotoButton"><i class="icon fa fa-arrow-left" title="previous image"></i></button>
+            <button class="roundButton nextPhotoButton"><i class="icon fa fa-arrow-right" title="next image"></i></button>
+        </div>
+        <h2 class="pageHeading bottomHeading">June 15, 2014</h2>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhost">
+        <button class="pageFlipButton previousPageButton"><i class="icon fa fa-arrow-left" title="previous page"></i></button>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhostPortrait">
+        <button class="pageFlipButton previousPageButtonPortrait"><i class="icon fa fa-arrow-up" title="previous page"></i></button>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <div id="ringsLeft1" class="ringsLeft"></div>
+</section><section data-pagenumber="2" class="page pageTypeBasic leftPageBase" >
+    <div class="leftPage">
+        <h2 class="pageHeading topHeading">Sravani &amp; Sesh</h2>
+        <div class="photoFrame">
+            <div class="photo" data-currentphoto="0" data-photoalbum="0" data-sectiontitle=""></div>
+            <div class="map"></div>
+            <button class="roundButton previousPhotoButton"><i class="icon fa fa-arrow-left" title="previous image"></i></button>
+            <button class="roundButton nextPhotoButton"><i class="icon fa fa-arrow-right" title="next image"></i></button>
+        </div>
+        <h2 class="pageHeading bottomHeading">June 15, 2014</h2>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhost">
+        <button class="pageFlipButton previousPageButton"><i class="icon fa fa-arrow-left" title="previous page"></i></button>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhostPortrait">
+        <button class="pageFlipButton previousPageButtonPortrait"><i class="icon fa fa-arrow-up" title="previous page"></i></button>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <div id="ringsLeft2" class="ringsLeft"></div>
+</section><section data-pagenumber="3" class="page pageTypeBasic leftPageBase" >
+    <div class="leftPage">
+        <h2 class="pageHeading topHeading">Sravani &amp; Sesh</h2>
+        <div class="photoFrame">
+            <div class="photo" data-currentphoto="0" data-photoalbum="0" data-sectiontitle=""></div>
+            <div class="map"></div>
+            <button class="roundButton previousPhotoButton"><i class="icon fa fa-arrow-left" title="previous image"></i></button>
+            <button class="roundButton nextPhotoButton"><i class="icon fa fa-arrow-right" title="next image"></i></button>
+        </div>
+        <h2 class="pageHeading bottomHeading">June 15, 2014</h2>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhost">
+        <button class="pageFlipButton previousPageButton"><i class="icon fa fa-arrow-left" title="previous page"></i></button>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhostPortrait">
+        <button class="pageFlipButton previousPageButtonPortrait"><i class="icon fa fa-arrow-up" title="previous page"></i></button>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <div id="ringsLeft3" class="ringsLeft"></div>
+</section><section data-pagenumber="4" class="page pageTypeBasic leftPageBase" >
+    <div class="leftPage">
+        <h2 class="pageHeading topHeading">Sravani &amp; Sesh</h2>
+        <div class="photoFrame">
+            <div class="photo" data-currentphoto="0" data-photoalbum="0" data-sectiontitle=""></div>
+            <div class="map"></div>
+            <button class="roundButton previousPhotoButton"><i class="icon fa fa-arrow-left" title="previous image"></i></button>
+            <button class="roundButton nextPhotoButton"><i class="icon fa fa-arrow-right" title="next image"></i></button>
+        </div>
+        <h2 class="pageHeading bottomHeading">June 15, 2014</h2>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhost">
+        <button class="pageFlipButton previousPageButton"><i class="icon fa fa-arrow-left" title="previous page"></i></button>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhostPortrait">
+        <button class="pageFlipButton previousPageButtonPortrait"><i class="icon fa fa-arrow-up" title="previous page"></i></button>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <div id="ringsLeft4" class="ringsLeft"></div>
+</section><section data-pagenumber="5" class="page pageTypeGallery leftPageBase">
+    <div class="leftPage">
+        <h2 class="pageHeading topHeading">Sravani &amp; Sesh</h2>
+        <div class="photoFrame">
+            <div class="photo" data-currentphoto="0" data-photoalbum="0"></div>
+            <button class="roundButton previousPhotoButton"><i class="icon fa fa-arrow-left" title="previous image"></i></button>
+            <button class="roundButton nextPhotoButton"><i class="icon fa fa-arrow-right" title="next image"></i></button>
+        </div>
+        <h2 class="pageHeading bottomHeading">June 15, 2014</h2>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhost">
+        <button class="pageFlipButton previousPageButton"><i class="icon fa fa-arrow-left" title="previous page"></i></button>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhostPortrait">
+        <button class="pageFlipButton previousPageButtonPortrait"><i class="icon fa fa-arrow-up" title="previous page"></i></button>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <div id="ringsLeft5" class="ringsLeft"></div>
+</section><section data-pagenumber="6" class="page pageTypeGuestBook leftPageBase">
+    <div class="leftPage">
+        <h2 class="pageHeading topHeading">Sravani &amp; Sesh</h2>
+                <h2 class="pageHeading bottomHeading">June 15, 2014</h2>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhost">
+        <button class="pageFlipButton previousPageButton"><i class="icon fa fa-arrow-left" title="previous page"></i></button>
+    </div>
+    <div class="pageFlipButtonGhost previousPageButtonGhostPortrait">
+        <button class="pageFlipButton previousPageButtonPortrait"><i class="icon fa fa-arrow-up" title="previous page"></i></button>
+    </div>
+    <button class="roundButton homePageButton"><i class="icon fa fa-home" title="book cover"></i></button>
+    <div id="ringsLeft6" class="ringsLeft"></div>
+</section>    </div>
+    <div id="bookCoverBase">
+                    <div id="bookCover" class="bookCover" data-xya="286,77,0" title="click book to open"></div>
+            </div>
+    
+    <div id="bottomTools">
+        <script>
+    var musicPlaylist = [{file:'/uploads/231156/music/8CB9D735-E415-0F51-3E836CC15D18CE72.mp3',title:'kalyani_new',artist:'',genre:''},{file:'/uploads/231156/music/8CC34E0B-D900-A618-37D6B5DBD5F65A8D.mp3',title:'Joe Satriani - Crystal Planet -04- Love thing',artist:'',genre:''},{file:'/uploads/231156/music/8CC3F438-D712-48FE-0AFA54C8EE187265.mp3',title:'SAX ECSTASY',artist:'',genre:''}];</script><audio id="musicAudio"></audio>
+
+<div id="musicPlayer" class="weddingColorBorder">
+    <div id="musicPlayerScreen">
+        <i id="musicIcon" class="musicPlayerIcon weddingColorContentHover fa fa-music"></i>
+        <i id="musicBackIcon" class="musicPlayerIcon weddingColorContentHover fa fa-step-backward"></i>
+        <i id="musicNextIcon" class="musicPlayerIcon weddingColorContentHover fa fa-step-forward"></i>
+        <i id="musicPlayIcon" class="musicPlayerIcon weddingColorContentHover fa fa-play"></i>
+        <label id="musicTitle"></label>
+    </div>
+</div>
+
+<div id="countdown" class="weddingColorBorder ">
+    <div id="countdownScreen">
+        <h3 id="countdownTime" class="weddingColorContentHover">00:00:00:00</h3>
+        <h3 id="countdownLabel">DAYS : HRS : MIN : SEC</h3>
+        <h3 id="preWedCountdownText" class="countdownText"></h3>
+        <h3 id="postWedCountdownText" class="countdownText"></h3>
+        <h3 id="weddingTime">1402812000</h3>
+    </div>
+</div>    </div>
+        <div id="uiBlock"></div>
+</div>
+<script>
+    var photoAlbum535689 = [{photo:'3546267',file:'8DDD07EB-E0F4-FB23-4868CE3C57F44CCF.jpg',text:''}];var photoAlbum535690 = [{photo:'3556806',file:'9A09DACD-CFA2-51C3-15F12D2AB5362533.jpg',text:'Traditional Indian Coffee'}];var photoAlbum535691 = [{photo:'3556777',file:'99137C53-D2EA-06D1-2D07CB1EAB9B3A1A.jpg',text:'Strong Expresso'}];var photoAlbum535692 = [{photo:'3556778',file:'99169F8F-07F0-79AE-AD11FDD49033A8C1.jpg',text:'The Blend'},{photo:'3556787',file:'9993328B-FC46-4C4E-D492E12E823D9650.jpg',text:'The Blend'},{photo:'3556788',file:'99934F4B-9BD5-0A94-5F3533AE5DCFE7AB.jpg',text:'The Blend'}];var photoAlbum535693 = [{photo:'3546173',file:'808C75B1-0070-3B1F-42C6994CD44D9B1E.jpg',text:''}];var photoAlbum537378 = [{photo:'3556810',file:'9A338C2A-DAF2-0AB5-9829200B31D34206.jpg',text:''},{photo:'3556812',file:'9A33A729-B5DD-67B0-B00AEBF8DB88CBB7.jpg',text:''}];</script><footer>
+            <h3 id="copyright"><a href="/">&copy; wedsite.com</a></h3>
+    </footer>                <script>
+            if (!window.jQuery) { 
+                document.write('<script src="20041501/js/jquery.min.js"><\/script><script src="20041501/js/jquery-ui.min.js"><\/script>'); 
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbbR9kTGm7POty5_IdUO1A7AJl6j28vs8"></script>
+                <script>
+    var isKeepsakeVersion = "1";</script>        <script src="20041501/js/usercom.js"></script>
+            </body>
+</html>
