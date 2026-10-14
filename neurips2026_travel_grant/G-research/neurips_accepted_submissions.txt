@@ -1,2 +1,0 @@
-1. K. S. Sesh Kumar and Viacheslav Borovitskiy. Practical Non-Stationary Graph Gaussian Processes. NeurIPS 2026, accepted as a poster. Submission ID: 25512.
-2. K. S. Sesh Kumar. Geometry-Constrained Kolmogorov–Arnold Networks: Learning Edge Geometry via Banach Duality. NeurIPS 2026, accepted as a poster. https://arxiv.org/abs/2608.25807
